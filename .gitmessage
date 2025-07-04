@@ -1,0 +1,50 @@
+# NFL Predictor Commit Message Template
+# 
+# Format: <type>(<scope>): <subject>
+#
+# <body>
+#
+# <footer>
+#
+# Types:
+# feat: New feature
+# fix: Bug fix
+# docs: Documentation changes
+# style: Code style changes (formatting, etc)
+# refactor: Code refactoring
+# perf: Performance improvements
+# test: Adding or updating tests
+# chore: Maintenance tasks
+# ci: CI/CD changes
+# security: Security-related changes
+#
+# Scope examples:
+# backend, frontend, ml, database, config, deployment, api, auth
+#
+# Subject:
+# - Use imperative mood ("Add" not "Added")
+# - No period at the end
+# - Max 50 characters
+#
+# Body:
+# - Explain what and why, not how
+# - Wrap at 72 characters
+# - Can include multiple paragraphs
+#
+# Footer:
+# - Breaking changes: "BREAKING CHANGE: <description>"
+# - Issue references: "Fixes #123", "Closes #456"
+# - Co-authored-by: Name <email@example.com>
+#
+# Example:
+# feat(backend): add JWT authentication middleware
+# 
+# Implement JWT-based authentication for API endpoints with refresh
+# token support and secure cookie handling.
+# 
+# - Add JWT middleware for route protection
+# - Implement refresh token rotation
+# - Add secure cookie configuration
+# 
+# Fixes #42
+# BREAKING CHANGE: Authentication now required for all API endpoints

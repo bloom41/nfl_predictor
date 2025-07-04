@@ -1,0 +1,352 @@
+# NFL Predictor - Comprehensive .gitignore
+# Security-focused ignore patterns for full-stack application
+
+# ===== SECURITY - NEVER COMMIT THESE =====
+# Environment files with secrets
+.env
+.env.local
+.env.production
+.env.staging
+.env.*.local
+
+# Secret and credential files
+*.key
+*.pem
+*.p12
+*.pfx
+secrets/
+credentials/
+*.creds
+.aws/
+.azure/
+
+# Database files with potentially sensitive data
+*.db
+*.sqlite
+*.sqlite3
+dump.sql
+*.sql.gz
+
+# ===== NODE.JS / NPM =====
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+.nyc_output
+
+# ESLint cache
+.eslintcache
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env.test
+
+# ===== TYPESCRIPT / BUILD =====
+# Compiled output
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# TypeScript cache
+*.tsbuildinfo
+
+# ===== PYTHON / ML =====
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.virtualenv/
+
+# ML Models and Data
+models/*.pkl
+models/*.joblib
+models/*.h5
+models/*.pb
+*.model
+data/raw/
+data/processed/
+*.csv.gz
+
+# ===== REACT / FRONTEND =====
+# production build
+frontend/client/build/
+frontend/client/dist/
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ===== DATABASES =====
+# SQLite
+*.sqlite
+*.sqlite3
+*.db
+
+# PostgreSQL
+*.dump
+*.sql
+
+# Redis
+dump.rdb
+
+# ===== LOGS =====
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime logs
+*.out
+*.err
+
+# Application logs
+backend.log
+frontend.log
+ml.log
+access.log
+error.log
+
+# ===== DOCKER =====
+# Docker files we might not want to commit
+docker-compose.override.yml
+.dockerignore
+
+# ===== IDEs / EDITORS =====
+# VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+\#*\#
+.\#*
+
+# ===== OPERATING SYSTEM =====
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===== TESTING =====
+# Test results
+test-results/
+coverage/
+.nyc_output/
+junit.xml
+
+# ===== TEMPORARY FILES =====
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# ===== PERFORMANCE / PROFILING =====
+# Profiling data
+*.prof
+*.trace
+
+# ===== PACKAGE MANAGERS =====
+# Yarn
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# pnpm
+.pnpm-store/
+
+# ===== CACHE =====
+# Cache directories
+.cache/
+.parcel-cache/
+.next/
+
+# ===== PROJECT SPECIFIC =====
+# NFL Predictor specific ignores
+backend-ts/ts_output.log
+reports/temp/
+docs/temp/
+scripts/temp/
+
+# Generated documentation that should be rebuilt
+docs/api/
+docs/generated/
+
+# ===== DEPLOYMENT =====
+# Deployment artifacts
+deployment/
+terraform.tfstate*
+.terraform/
+helm-charts/values-production.yaml
+
+# CI/CD
+.github/workflows/secrets.yml
+
+# ===== MONITORING =====
+# Monitoring and metrics
+prometheus-data/
+grafana-data/
+logs/production/
+
+# ===== EXCEPTIONS - Files we DO want to track =====
+# Keep example environment files
+!.env.example
+!.env.development.template
+!.env.production.template
+!.env.test.template
+
+# Keep important config templates
+!docker-compose.example.yml
+!nginx.example.conf
+
+# Keep documentation
+!README.md
+!docs/**/*.md
+
+# Keep git hooks
+!.githooks/

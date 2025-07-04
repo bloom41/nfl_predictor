@@ -1,0 +1,11 @@
+{
+  "name": "@nfl-predictor/types",
+  "version": "1.0.0",
+  "description": "Shared TypeScript types for NFL Predictor backend and frontend",
+  "main": "index.ts",
+  "types": "index.ts",
+  "exports": {
+    ".": "./index.ts",
+    "./schemas": "../schemas/player.ts"
+  }
+}

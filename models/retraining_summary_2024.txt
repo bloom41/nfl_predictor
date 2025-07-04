@@ -1,0 +1,52 @@
+Model Retraining Summary - 2024 Season
+==================================================
+Training Date: 2025-06-29 19:16:14.552692
+
+QB Model Performance:
+  MAE: 1.43
+  RMSE: 1.75
+  R²: 0.931
+  CV Score: 1.97
+  Top Features:
+    passing_tds: 29168.6
+    td_rate: 15745.2
+    rushing_tds: 9335.2
+    passing_yards: 3157.1
+    rushing_yards: 2568.8
+
+RB Model Performance:
+  MAE: 1.31
+  RMSE: 1.62
+  R²: 0.907
+  CV Score: 2.17
+  Top Features:
+    rushing_tds: 31619.1
+    receiving_tds: 9624.8
+    rushing_yards: 6916.7
+    catch_rate: 2891.0
+    receptions: 2847.1
+
+WR Model Performance:
+  MAE: 1.08
+  RMSE: 1.39
+  R²: 0.938
+  CV Score: 2.10
+  Top Features:
+    receiving_tds: 19001.3
+    td_rate: 16731.4
+    rushing_tds: 11493.7
+    receiving_yards: 10845.7
+    receptions: 4434.5
+
+TE Model Performance:
+  MAE: 1.80
+  RMSE: 2.20
+  R²: 0.913
+  CV Score: 2.34
+  Top Features:
+    receiving_tds: 13977.3
+    receiving_yards: 8582.1
+    td_rate: 6168.4
+    rushing_tds: 5863.7
+    receptions: 4321.2
+
